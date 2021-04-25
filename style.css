@@ -1,0 +1,125 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300;1,400&display=swap');
+*{
+    margin:0px;
+    padding:0px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:black;
+    color:white;
+    font-family: 'Roboto', sans-serif;
+
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+
+.container {
+    width: 500px;
+}
+
+.container h1 {
+    text-align: center;
+    padding-bottom: 34px;
+}
+
+.faq1-container {
+    display: grid;
+    grid-template-rows: 45px 1fr;
+    margin-bottom: 23px;
+    box-sizing: border-box;
+    padding: 12px;
+    background: #060606;
+    border-radius: 10px;
+    /* height: 66px; */
+}
+
+.faq1-header {
+    display: grid;
+    grid-template-columns: 1fr 65px;
+}
+
+.faq1-description{
+    transition: 0.8s;
+    font-size: 13px;
+    padding-top: 20px;
+    opacity:0;
+    height:0px;
+    overflow: hidden;
+    width: 89%;
+}
+.faq1-description p{
+    text-align: justify;
+}
+.active{
+    opacity: 1;
+    /* height:auto; */
+    transition: 0.8s;
+}
+.faq1-container.active .faq1-description{
+    opacity: 1;
+    height:70px;
+
+}
+
+.add{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    top: 22px;
+    background: #ffc100;
+    align-items: center;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+}
+
+.faq1-header h3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    top: 13px;
+}
+.img-div{
+    width: 64%;
+}
+img{
+    width: 78%;
+}
+
+@media screen and (max-width:500px) {
+    .faq1-container {
+       width:300px;
+       margin: auto;
+       margin:10px;
+}
+.container {
+    width:490px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.faq1-container.active .faq1-description{
+    opacity: 1;
+    height:75px;
+
+}
+body{
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar{
+    width:5px;
+}
+}
