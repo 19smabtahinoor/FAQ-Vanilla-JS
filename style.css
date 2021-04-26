@@ -37,7 +37,8 @@ body::-webkit-scrollbar{
     padding: 12px;
     background: #060606;
     border-radius: 10px;
-    /* height: 66px; */
+    border-bottom: 4px ridge #ffc100;
+
 }
 
 .faq1-header {
